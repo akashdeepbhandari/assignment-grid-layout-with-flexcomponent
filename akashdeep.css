@@ -3,6 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
 }
+/*
  .emojis
 {
   display: grid;
@@ -16,10 +17,15 @@ body {
      text-align:center;
 
 }
-/*.emojis {
+*/
+
+.emojis {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  grid-gap: 10px;
+  justify-content:left;
+  
 }
 
 .emoji {
@@ -27,9 +33,9 @@ body {
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  width:40%;
- 
-}*/
+  width:47%;
+  
+}
 
 .emoji h2 {
   margin: 0;
@@ -42,10 +48,13 @@ body {
   text-decoration: none;
   background-color: #781BAA;
   color: white;
-padding: 1rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 8px;
-  text-align:left;
+  text-align:center;
   font-size: 1em;
+  margin-bottom: 0px;
+  display: block;
+  
   
 }
 
@@ -58,5 +67,16 @@ p
 {
 	text-align:left;
 	padding-bottom:20px;
-	height: 141px;
+	height:70px;
+}
+
+@media only screen and (max-width: 600px) {
+
+.emoji
+{
+	width:100%;
+}
+p{
+	height:105px;
+}
 }
